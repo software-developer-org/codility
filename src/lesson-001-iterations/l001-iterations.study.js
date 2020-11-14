@@ -54,3 +54,21 @@ triangle2Functional(2);
 
 console.log('triangle2Functional(4)');
 triangle2Functional(4);
+
+const pascalTriangle = (column, row) => {
+  const colLength = row + 1;
+  if (column === 0 || column === colLength - 1) {
+    return 1;
+  }
+  return pascalTriangle(column - 1, row - 1) + pascalTriangle(column, row - 1);
+};
+
+console.log('pascalTriangle with 5 rows');
+for (let row = 0; row < 5; row++) {
+  const colLength = row + 1;
+  let column = 'row ' + row + ': ';
+  for (let col = 0; col < colLength; col++) {
+    column += '(c' + col + 'r' + row + ')' + pascalTriangle(col, row) + ' ';
+  }
+  console.log(column);
+}

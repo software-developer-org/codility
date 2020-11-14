@@ -183,12 +183,6 @@ starting from row = 0 until row = n - 1
 
 ```
 
-Solution:
-
-```bash
-node src/lesson-001-iterations/l001-iterations.study.js
-```
-
 ### Pascal's Triangle
 
 simply said: inside the triangle, each value is the sum of the two numbers above:
@@ -210,6 +204,33 @@ Exercise: https://j2eedev.org/pascal-triangle-scala/
 pascalTriangle(column: number, row: number) {
 
 }
+```
+
+prepare and describe row and col positions:
+
+```
+row 0: (c0r0 = 1)
+row 1: (c0r1 = 1), (c0r1 = 1)
+row 2: (c0r2 = 1), (c1r2 = 2), (c2r2 = 1)
+row 3: (c0r3 = 1), (c1r3 = 3), (c2r3 = 3), (c3r3 = 1)
+row 4: (c0r4 = 1), (c1r4 = 4), (c2r4 = 6), (c3r4 = 4), (c4r4 = 1)
+```
+
+formalized:
+
+```
+// calling this function means e.g. give me the value for row and column
+pascalTriangle(column: number, row: number) {
+  colLength = row + 1;
+  if start (column = 0) or end (column = colLength - 1) return 1;
+  return the sum of above previous values: pascalTriangle(column -1, row - 1) + pascalTriangle(column, row - 1);
+}
+```
+
+Triangle solution:
+
+```bash
+node src/lesson-001-iterations/l001-iterations.study.js
 ```
 
 # While loops
