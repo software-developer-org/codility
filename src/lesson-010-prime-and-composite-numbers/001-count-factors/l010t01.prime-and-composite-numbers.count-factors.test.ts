@@ -22,7 +22,7 @@
  */
 const testData = [];
 
-import solution = require('./l010t02.prime-and-composite-numbers.count-factors.solution');
+import solution = require('./l010t01.prime-and-composite-numbers.count-factors.solution');
 
 describe('countFactors test', () => {
   it('test solution', () => {
