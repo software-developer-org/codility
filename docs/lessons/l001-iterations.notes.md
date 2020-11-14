@@ -183,6 +183,12 @@ starting from row = 0 until row = n - 1
 
 ```
 
+Solution:
+
+```bash
+node src/lesson-001-iterations/l001-iterations.study.js
+```
+
 ### Pascal's Triangle
 
 simply said: inside the triangle, each value is the sum of the two numbers above:

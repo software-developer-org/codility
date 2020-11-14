@@ -15,6 +15,12 @@ These resources might be useful as a preparation:
 
 The lessons can be found [here](https://app.codility.com/programmers/lessons/1-iterations/).
 
+There are some code samples based on the lesson papers. These sources can be executed using node:
+
+```bash
+node src/lesson-001-iterations/l001-iterations.study.js
+```
+
 ## Iterations
 
 ### Lesson 1
