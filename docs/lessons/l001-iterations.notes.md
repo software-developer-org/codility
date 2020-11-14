@@ -1,8 +1,10 @@
 # Iterations
 
-## For loops
+[Codility: Lesson 1 - Iterations](https://app.codility.com/programmers/lessons/1-iterations/)
 
-### Factorial exercise
+# For loops
+
+## Factorial exercise
 
 Read factorial on [Wikipedia](https://en.wikipedia.org/wiki/Factorial).
 
@@ -47,7 +49,7 @@ factorial(n) {
 
 This is what we call a recursion.
 
-### Recursion and Tail Recursion
+## Recursion and Tail Recursion
 
 From [StackOverflow - What is tail recursion?](https://stackoverflow.com/a/33930/3437868):
 
@@ -112,7 +114,7 @@ if (4 == 0) 1 else 4 _ factorial(4 - 1)
 24
 ```
 
-### Pascal's Triangle
+## Pascal's Triangle
 
 simply said: inside the triangle, each value is the sum of the two numbers above:
 
@@ -135,7 +137,7 @@ pascalTriangle(column: number, row: number) {
 }
 ```
 
-## While loops
+# While loops
 
 ```
 
