@@ -114,7 +114,76 @@ if (4 == 0) 1 else 4 _ factorial(4 - 1)
 24
 ```
 
-## Pascal's Triangle
+## Triangles
+
+Example: Let’s print a triangle made of asterisks (‘\*’) separated by spaces. The triangle
+should consist of n rows, where n is a given positive integer, and consecutive rows should
+contain 1, 2, . . . , n asterisks. For example, for n = 4 the triangle should appear as follows:
+
+```
+*
+* *
+* * *
+* * * *
+```
+
+Pseudo code:
+
+```
+triangle(n) {
+    // express above example in logical wording:
+    // using n=4
+    // print 1 asterisk in row 0
+    // print 2 asterisk in row 1
+    // print 3 asterisk in row 2
+    // print 4 asterisk in row 3
+
+    // formalize above logical solution:
+    // start from row = 0 until row = n -1
+    // for each row: number of asterisks = row + 1
+    // for each row: print number of asterisks
+
+    // try to formulate above logical solution:
+    starting from x = 0 until x = n-1
+        print asterisks (x + 1) times
+}
+```
+
+Example: Let’s print a triangle made of asterisks (‘\*’) separated by spaces and consisting
+of n rows again, but this time upside down, and make it symmetrical. Consecutive rows should
+contain 2n − 1, 2n − 3, . . . , 3, 1 asterisks and should be indented by 0, 2, 4, . . . , 2(n − 1)
+spaces. For example, for n = 4 the triangle should appear as follows:
+
+```
+* * * * * * *
+  * * * * *
+    * * *
+      *
+```
+
+Pseudo code using figurative language
+
+```
+// highlight spaces with 's'
+* * * * * * *
+s * * * * * s
+s s * * * s s
+s s s * s s s
+
+// describe asterisks, spaces at start (prefix) and end (suffix) per row
+row 0: prefix with 0 spaces, 7 asterisks, suffix with 0 spaces
+row 1: prefix with 1 spaces, 5 asterisks, suffix with 1 spaces
+row 2: prefix with 2 spaces, 3 asterisks, suffix with 2 spaces
+row 3: prefix with 3 spaces, 1 asterisks, suffix with 3 spaces
+
+// formalized:
+starting from row = 0 until row = n - 1
+  prefix and suffix = row;
+  asterisks = (n * 2) - 1 - (2* row)
+
+```
+
+### Pascal's Triangle
 
 simply said: inside the triangle, each value is the sum of the two numbers above:
 
