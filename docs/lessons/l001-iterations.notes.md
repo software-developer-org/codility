@@ -358,6 +358,20 @@ while (power <= 308) do: // 308 is highest value in Javascript for using power
 
 ```
 
-```
+## [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
 
+```javascript
+// show Fibonacci numbers from 0 until n
+fibonacci(n) {
+  let a = 0;
+  let b = 1;
+  while (a <= n) {
+    console.log(a);
+    // next fibo numbers
+    const c = a + b;
+    // move values to the left
+    a = b;
+    b = c;
+  }
+}
 ```

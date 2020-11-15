@@ -92,3 +92,19 @@ const countDigitsUsingPower = (n) => {
 
 console.log('countDigitsUsingPower(9):', countDigitsUsingPower(9));
 console.log('countDigitsUsingPower(100100100):', countDigitsUsingPower(100100100));
+
+// show Fibonacci numbers from 0 until n
+const fibonacci = (n) => {
+  let a = 0;
+  let b = 1;
+  while (a <= n) {
+    console.log(a);
+    // next fibo numbers
+    const c = a + b;
+    // move values to the left
+    a = b;
+    b = c;
+  }
+};
+
+console.log('fibonacci(144)', fibonacci(144));
