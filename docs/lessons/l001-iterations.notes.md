@@ -1,6 +1,9 @@
-# Iterations
+# Lesson 1 - Iterations
 
-[Codility: Lesson 1 - Iterations](https://app.codility.com/programmers/lessons/1-iterations/)
+Codility:
+
+- [Iterations](https://app.codility.com/programmers/lessons/1-iterations/)
+- [Open Reading Material.PDF](docs/lessons/l001-iterations.pdf)
 
 # For loops
 
