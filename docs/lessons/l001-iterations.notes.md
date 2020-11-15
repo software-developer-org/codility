@@ -378,7 +378,11 @@ fibonacci(n) {
 
 # Looping over collections of values
 
+Arrays, Sets and Dictionaries are [abstract data types](<https://en.wikipedia.org/wiki/Set_(abstract_data_type)>).
+
 ## Array for ordered lists
+
+Definition on [Wikipedia](https://en.wikipedia.org/wiki/Array_data_type).
 
 Loops in same order as defined in array:
 
@@ -390,6 +394,8 @@ Loops in same order as defined in array:
 ```
 
 ## Set does not guarantee order
+
+Definition on [Wikipedia](<https://en.wikipedia.org/wiki/Set_(abstract_data_type)>).
 
 ```python
  days = set([’Monday’, ’Tuesday’, ’Wednesday’, ’Thursday’,
@@ -412,6 +418,8 @@ Saturday
 ```
 
 ## Dictionary with key: value
+
+Dictionaries also known as [associative array](https://en.wikipedia.org/wiki/Associative_array).
 
 ```python
  days = {’mon’: ’Monday’, ’tue’: ’Tuesday’, ’wed’: ’Wednesday’,
