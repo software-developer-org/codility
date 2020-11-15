@@ -54,6 +54,69 @@ This is what we call a recursion.
 
 ## Recursion and Tail Recursion
 
+### [GeeksforGeeks examples](https://www.geeksforgeeks.org/tail-recursion/)
+
+> What is tail recursion?
+> <br><br>
+> A recursive function is tail recursive when recursive call is the last thing executed by the function. For example the following C++ function print() is tail recursive.
+
+```c++
+// An example of tail recursive function
+void print(int n)
+{
+if (n < 0) return;
+cout << " " << n;
+
+    // The last executed statement is recursive call
+    print(n-1);
+
+}
+```
+
+> Why do we care?
+> <br><br>
+> The tail recursive functions considered better than non tail recursive functions as tail-recursion can be optimized by compiler. The idea used by compilers to optimize tail-recursive functions is simple, since the recursive call is the last statement, there is nothing left to do in the current function, so saving the current function’s stack frame is of no use (See this for more details).
+> <br><br>
+> Can a non-tail recursive function be written as tail-recursive to optimize it?
+> <br><br>
+> Consider the following function to calculate factorial of n. It is a non-tail-recursive function. Although it looks like a tail recursive at first look. If we take a closer look, we can see that the value returned by fact(n-1) is used in fact(n), so the call to fact(n-1) is not the last thing done by fact(n)
+
+Recursive example:
+
+```java
+// A NON-tail-recursive function.
+// The function is not tail
+// recursive because the value
+// returned by fact(n-1) is used
+// in fact(n) and call to fact(n-1)
+// is not the last thing done by
+// fact(n)
+static int fact(int n)
+{
+  if (n == 0) return 1;
+  return n*fact(n-1);
+}
+```
+
+Tail recursive example:
+
+```java
+// A tail recursive function
+// to calculate factorial
+static int factTR(int n, int a)
+{
+  if (n == 0)
+    return a;
+  return factTR(n - 1, n * a);
+}
+
+// A wrapper over factTR
+static int fact(int n)
+{
+  return factTR(n, 1);
+}
+```
+
 ### [StackOverflow - What is tail recursion?](https://stackoverflow.com/a/33930/3437868)
 
 > In traditional recursion, the typical model is that you perform your recursive calls first, and then you take the return value of the recursive call and calculate the result. In this manner, you don't get the result of your calculation until you have returned from every recursive call.
@@ -75,13 +138,16 @@ Very good [Scala example](https://www.scala-exercises.org/scala_tutorial/tail_re
 > Here's an implementation of gcd using Euclid's algorithm.
 
 ```
+
 def gcd(a: Int, b: Int): Int =
-  if (b == 0) a else gcd(b, a % b)
+if (b == 0) a else gcd(b, a % b)
+
 ```
 
 > gcd(14, 21) is evaluated as follows:
 
 ```
+
 gcd(14, 21)
 if (21 == 0) 14 else gcd(21, 14 % 21)
 if (false) 14 else gcd(21, 14 % 21)
@@ -95,18 +161,22 @@ gcd(7, 0)
 if (0 == 0) 7 else gcd(0, 7 % 0)
 if (true) 7 else gcd(0, 7 % 0)
 7
+
 ```
 
 Now, consider factorial:
 
 ```
+
 def factorial(n: Int): Int =
 if (n == 0) 1 else n \* factorial(n - 1)
+
 ```
 
 factorial(4) is evaluated as follows:
 
 ```
+
 factorial(4)
 if (4 == 0) 1 else 4 _ factorial(4 - 1)
 4 _ factorial(3)
@@ -115,6 +185,7 @@ if (4 == 0) 1 else 4 _ factorial(4 - 1)
 4 _ (3 _ (2 _ (1 _ factorial(0)))
 4 _ (3 _ (2 _ (1 \* 1)))
 24
+
 ```
 
 ## Triangles
@@ -124,22 +195,27 @@ should consist of n rows, where n is a given positive integer, and consecutive r
 contain 1, 2, . . . , n asterisks. For example, for n = 4 the triangle should appear as follows:
 
 ```
-*
-* *
-* * *
-* * * *
+
+-
+- -
+
+---
+
+---
+
 ```
 
 Pseudo code:
 
 ```
+
 triangle(n) {
-    // express above example in logical wording:
-    // using n=4
-    // print 1 asterisk in row 0
-    // print 2 asterisk in row 1
-    // print 3 asterisk in row 2
-    // print 4 asterisk in row 3
+// express above example in logical wording:
+// using n=4
+// print 1 asterisk in row 0
+// print 2 asterisk in row 1
+// print 3 asterisk in row 2
+// print 4 asterisk in row 3
 
     // formalize above logical solution:
     // start from row = 0 until row = n -1
@@ -149,7 +225,9 @@ triangle(n) {
     // try to formulate above logical solution:
     starting from x = 0 until x = n-1
         print asterisks (x + 1) times
+
 }
+
 ```
 
 Example: Let’s print a triangle made of asterisks (‘\*’) separated by spaces and consisting
@@ -158,20 +236,27 @@ contain 2n − 1, 2n − 3, . . . , 3, 1 asterisks and should be indented by 0, 
 spaces. For example, for n = 4 the triangle should appear as follows:
 
 ```
-* * * * * * *
-  * * * * *
+
+---
+
+---
+
     * * *
       *
+
 ```
 
 Pseudo code using figurative language
 
 ```
+
 // highlight spaces with 's'
-* * * * * * *
-s * * * * * s
-s s * * * s s
-s s s * s s s
+
+---
+
+s \* \* \* \* _ s
+s s _ \* _ s s
+s s s _ s s s
 
 // describe asterisks, spaces at start (prefix) and end (suffix) per row
 row 0: prefix with 0 spaces, 7 asterisks, suffix with 0 spaces
@@ -181,8 +266,8 @@ row 3: prefix with 3 spaces, 1 asterisks, suffix with 3 spaces
 
 // formalized:
 starting from row = 0 until row = n - 1
-  prefix and suffix = row;
-  asterisks = (n * 2) - 1 - (2* row)
+prefix and suffix = row;
+asterisks = (n _ 2) - 1 - (2_ row)
 
 ```
 
@@ -191,11 +276,13 @@ starting from row = 0 until row = n - 1
 simply said: inside the triangle, each value is the sum of the two numbers above:
 
 ```
-row 0:    1
-row 1:   1 1
-row 2:  1 2 1
+
+row 0: 1
+row 1: 1 1
+row 2: 1 2 1
 row 3: 1 3 3 1
 row 4:1 4 6 4 1
+
 ```
 
 [Wikipedia](https://en.wikipedia.org/wiki/Pascal%27s_triangle)
