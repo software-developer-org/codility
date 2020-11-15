@@ -54,7 +54,7 @@ This is what we call a recursion.
 
 ## Recursion and Tail Recursion
 
-From [StackOverflow - What is tail recursion?](https://stackoverflow.com/a/33930/3437868):
+### [StackOverflow - What is tail recursion?](https://stackoverflow.com/a/33930/3437868)
 
 > In traditional recursion, the typical model is that you perform your recursive calls first, and then you take the return value of the recursive call and calculate the result. In this manner, you don't get the result of your calculation until you have returned from every recursive call.
 > <br><br>
@@ -62,11 +62,11 @@ From [StackOverflow - What is tail recursion?](https://stackoverflow.com/a/33930
 > <br><br>
 > The consequence of this is that once you are ready to perform your next recursive step, you don't need the current stack frame any more. This allows for some optimization. In fact, with an appropriately written compiler, you should never have a stack overflow snicker with a tail recursive call. Simply reuse the current stack frame for the next recursive step. I'm pretty sure Lisp does this.
 
-From [Wikipedia - Recursion](<https://en.wikipedia.org/wiki/Recursion_(computer_science)>):
+### [Wikipedia - Recursion](<https://en.wikipedia.org/wiki/Recursion_(computer_science)>)
 
 > In computer science, recursion is a method of solving a problem where the solution depends on solutions to smaller instances of the same problem.[1] Such problems can generally be solved by iteration, but this needs to identify and index the smaller instances at programming time. Recursion solves such recursive problems by using functions that call themselves from within their own code. The approach can be applied to many types of problems, and recursion is one of the central ideas of computer science.
 
-From [Wikipedia - Tail call](https://en.wikipedia.org/wiki/Tail_call):
+### [Wikipedia - Tail call](https://en.wikipedia.org/wiki/Tail_call)
 
 > In computer science, a tail call is a subroutine call performed as the final action of a procedure.[1] If the target of a tail is the same subroutine, the subroutine is said to be tail-recursive, which is a special case of direct recursion. Tail recursion (or tail-end recursion) is particularly useful, and often easy to handle in implementations.
 
