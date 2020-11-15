@@ -375,3 +375,74 @@ fibonacci(n) {
   }
 }
 ```
+
+# Looping over collections of values
+
+## Array for ordered lists
+
+Loops in same order as defined in array:
+
+```python
+ days = [’Monday’, ’Tuesday’, ’Wednesday’, ’Thursday’,
+ ’Friday’, ’Saturday’, ’Sunday’]
+ for day in days:
+ print day
+```
+
+## Set does not guarantee order
+
+```python
+ days = set([’Monday’, ’Tuesday’, ’Wednesday’, ’Thursday’,
+ ’Friday’, ’Saturday’, ’Sunday’])
+ for day in days:
+ print day
+
+```
+
+Output might be in different order:
+
+```
+Monday
+Tuesday
+Friday
+Wednesday
+Thursday
+Sunday
+Saturday
+```
+
+## Dictionary with key: value
+
+```python
+ days = {’mon’: ’Monday’, ’tue’: ’Tuesday’, ’wed’: ’Wednesday’,
+ ’thu’: ’Thursday’, ’fri’: ’Friday’, ’sat’: ’Saturday’,
+ ’sun’: ’Sunday’}
+ for day in days:
+ print day, ’stands for’, days[day]
+
+```
+
+```
+wed stands for Wednesday
+sun stands for Sunday
+fri stands for Friday
+tue stands for Tuesday
+mon stands for Monday
+thu stands for Thursday
+sat stands for Saturday
+```
+
+NOTE: In JavaScript an Array is also presented as a dictionary where index are properties (keys):
+
+```javascript
+arr = new Array(3)
+> {length: 4}
+arr.push('lastValue')
+> {0: 3: "lastValue", length: 4}
+arr[0] = 'first'
+> {0: "first", 3: "lastValue", length: 4}
+arr[1] = 'second'
+> {0: "first", 1: "second", 3: "lastValue", length: 4}
+Object.keys(arr)
+> ["0", "1", "3"]
+```
