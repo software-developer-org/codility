@@ -54,32 +54,30 @@ This is what we call a recursion.
 
 ## Recursion and Tail Recursion
 
-### [GeeksforGeeks examples](https://www.geeksforgeeks.org/tail-recursion/)
+[GeeksforGeeks examples](https://www.geeksforgeeks.org/tail-recursion/)
 
 > What is tail recursion?
 > <br><br>
-> A recursive function is tail recursive when recursive call is the last thing executed by the function. For example the following C++ function print() is tail recursive.
+> A recursive **function is tail recursive when recursive call is the last thing executed by the function**. For example the following C++ function print() is tail recursive.
 
 ```c++
 // An example of tail recursive function
 void print(int n)
 {
-if (n < 0) return;
-cout << " " << n;
-
-    // The last executed statement is recursive call
-    print(n-1);
-
+  if (n < 0) return;
+  cout << " " << n;
+  // The last executed statement is recursive call
+  print(n-1);
 }
 ```
 
 > Why do we care?
 > <br><br>
-> The tail recursive functions considered better than non tail recursive functions as tail-recursion can be optimized by compiler. The idea used by compilers to optimize tail-recursive functions is simple, since the recursive call is the last statement, there is nothing left to do in the current function, so saving the current function’s stack frame is of no use (See this for more details).
+> The tail recursive functions considered better than non tail recursive functions as **tail-recursion can be optimized by compiler**. The idea used by compilers to optimize tail-recursive functions is simple, since the recursive call is the last statement, there is nothing left to do in the current function, so saving the current function’s stack frame is of no use (See [this](https://www.geeksforgeeks.org/tail-call-elimination/) for more details).
 > <br><br>
 > Can a non-tail recursive function be written as tail-recursive to optimize it?
 > <br><br>
-> Consider the following function to calculate factorial of n. It is a non-tail-recursive function. Although it looks like a tail recursive at first look. If we take a closer look, we can see that the value returned by fact(n-1) is used in fact(n), so the call to fact(n-1) is not the last thing done by fact(n)
+> Consider the following function to calculate factorial of n. It is a non-tail-recursive function. Although it looks like a tail recursive at first look. If we take a closer look, we can see that the value returned by fact(n-1) is used in fact(n), so the call to fact(n-1) is not the last thing done by fact(n):
 
 Recursive example:
 
@@ -97,6 +95,8 @@ static int fact(int n)
   return n*fact(n-1);
 }
 ```
+
+> The above function can be written as a tail recursive function. **The idea is to use one more argument and accumulate the factorial value in second argument**. When n reaches 0, return the accumulated value.
 
 Tail recursive example:
 
@@ -117,21 +117,22 @@ static int fact(int n)
 }
 ```
 
-### [StackOverflow - What is tail recursion?](https://stackoverflow.com/a/33930/3437868)
+[StackOverflow - What is tail recursion?](https://stackoverflow.com/a/33930/3437868)
 
-> In traditional recursion, the typical model is that you perform your recursive calls first, and then you take the return value of the recursive call and calculate the result. In this manner, you don't get the result of your calculation until you have returned from every recursive call.
+> In traditional recursion, the typical model is that you perform your **recursive calls first, and then you take the return value of the recursive call and calculate the result**. In this manner, you don't get the result of your calculation until you have returned from every recursive call.
 > <br><br>
-> In tail recursion, you perform your calculations first, and then you execute the recursive call, passing the results of your current step to the next recursive step. This results in the last statement being in the form of (return (recursive-function params)). Basically, the return value of any given recursive step is the same as the return value of the next recursive call.
+
+> **In tail recursion, you perform your calculations first, and then you execute the recursive call**, passing the results of your current step to the next recursive step. This results in the last statement being in the form of (return (recursive-function params)). Basically, the return value of any given recursive step is the same as the return value of the next recursive call.
 > <br><br>
-> The consequence of this is that once you are ready to perform your next recursive step, you don't need the current stack frame any more. This allows for some optimization. In fact, with an appropriately written compiler, you should never have a stack overflow snicker with a tail recursive call. Simply reuse the current stack frame for the next recursive step. I'm pretty sure Lisp does this.
+> The consequence of this is that once you are ready to perform your next recursive step, **you don't need the current stack frame any more**. This allows for some optimization. In fact, with an appropriately written compiler, you should never have a stack overflow snicker with a tail recursive call. Simply reuse the current stack frame for the next recursive step. I'm pretty sure Lisp does this.
 
-### [Wikipedia - Recursion](<https://en.wikipedia.org/wiki/Recursion_(computer_science)>)
+[Wikipedia - Recursion](<https://en.wikipedia.org/wiki/Recursion_(computer_science)>)
 
-> In computer science, recursion is a method of solving a problem where the solution depends on solutions to smaller instances of the same problem.[1] Such problems can generally be solved by iteration, but this needs to identify and index the smaller instances at programming time. Recursion solves such recursive problems by using functions that call themselves from within their own code. The approach can be applied to many types of problems, and recursion is one of the central ideas of computer science.
+> In computer science, **recursion is a method of solving a problem where the solution depends on solutions to smaller instances of the same problem**. Such problems can generally be solved by iteration, but this needs to identify and index the smaller instances at programming time. Recursion solves such recursive problems by using functions that call themselves from within their own code. The approach can be applied to many types of problems, and recursion is one of the central ideas of computer science.
 
-### [Wikipedia - Tail call](https://en.wikipedia.org/wiki/Tail_call)
+[Wikipedia - Tail call](https://en.wikipedia.org/wiki/Tail_call)
 
-> In computer science, a tail call is a subroutine call performed as the final action of a procedure.[1] If the target of a tail is the same subroutine, the subroutine is said to be tail-recursive, which is a special case of direct recursion. Tail recursion (or tail-end recursion) is particularly useful, and often easy to handle in implementations.
+> In computer science, a **tail call is a subroutine call performed as the final action of a procedure. If the target of a tail is the same subroutine, the subroutine is said to be tail-recursive**, which is a special case of direct recursion. Tail recursion (or tail-end recursion) is particularly useful, and often easy to handle in implementations.
 
 Very good [Scala example](https://www.scala-exercises.org/scala_tutorial/tail_recursion) for greatest common divisor (gcd, tail recursion) and factorial (recursion):
 
