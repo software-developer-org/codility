@@ -94,7 +94,7 @@ console.log('countDigitsUsingPower(9):', countDigitsUsingPower(9));
 console.log('countDigitsUsingPower(100100100):', countDigitsUsingPower(100100100));
 
 // show Fibonacci numbers from 0 until n
-const fibonacci = (n) => {
+const fibonacciWhileLoop = (n) => {
   let a = 0;
   let b = 1;
   while (a <= n) {
@@ -107,4 +107,4 @@ const fibonacci = (n) => {
   }
 };
 
-console.log('fibonacci(144)', fibonacci(144));
+console.log('fibonacciWhileLoop(144)', fibonacciWhileLoop(144));
