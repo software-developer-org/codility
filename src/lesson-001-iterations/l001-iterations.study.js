@@ -72,3 +72,23 @@ for (let row = 0; row < 5; row++) {
   }
   console.log(column);
 }
+
+const countDigitsUsingString = (n) => {
+  return (n + '').length;
+};
+
+console.log('countDigitsUsingString(9):', countDigitsUsingString(9));
+console.log('countDigitsUsingString(100100100):', countDigitsUsingString(100100100));
+
+const countDigitsUsingPower = (n) => {
+  let power = 1;
+  while (power <= 308) {
+    if (n === n % Math.pow(10, power)) {
+      return power;
+    }
+    power += 1;
+  }
+};
+
+console.log('countDigitsUsingPower(9):', countDigitsUsingPower(9));
+console.log('countDigitsUsingPower(100100100):', countDigitsUsingPower(100100100));

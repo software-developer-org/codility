@@ -326,15 +326,35 @@ node src/lesson-001-iterations/l001-iterations.study.js
 
 # While loops
 
+## Count number of digits
+
 ```
+// eg. for n = 99 => 2 digits
+countDigits(n) {
+
+}
+```
+
+Pseudo code, string solution
+
+```
+// convert to string
+// digits = string length
 
 ```
 
-```
+Pseudo code, power and [modulo](https://en.wikipedia.org/wiki/Modulo_operation) solution
 
 ```
+// example: 120 modulo 1000 = 120 // remainder is equal value
+// 1000 can be expressed with base^power
+// 120 modulo (10^3) = 120 // so if remainder equals value then digit = power
+// n = n modulo base^power => digits = power
 
-```
+power = 1;
+while (power <= 308) do: // 308 is highest value in Javascript for using power
+    if (n === n module base^power) return power
+    power += 1
 
 ```
 
