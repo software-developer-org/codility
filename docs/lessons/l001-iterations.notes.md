@@ -270,8 +270,7 @@ Pseudo code solution:
 // formalized:
 starting from row = 0 until row = n - 1
 prefix and suffix = row;
-asterisks = (n _ 2) - 1 - (2_ row)
-
+asterisks = (n * 2) - 1 - (2 * row)
 ```
 
 ### Pascal's Triangle
