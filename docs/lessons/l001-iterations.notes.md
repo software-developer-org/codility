@@ -202,7 +202,7 @@ contain 1, 2, . . . , n asterisks. For example, for n = 4 the triangle should ap
 ****
 ```
 
-Pseudo code:
+Pseudo code explaining every step:
 
 ```
 
@@ -213,16 +213,19 @@ triangle(n) {
 // print 2 asterisk in row 1
 // print 3 asterisk in row 2
 // print 4 asterisk in row 3
+```
 
-    // formalize above logical solution:
-    // start from row = 0 until row = n -1
-    // for each row: number of asterisks = row + 1
-    // for each row: print number of asterisks
+Pseudo code with formalized algorithm:
 
-    // try to formulate above logical solution:
-    starting from x = 0 until x = n-1
-        print asterisks (x + 1) times
+```
+// formalize above logical solution:
+// start from row = 0 until row = n -1
+// for each row: number of asterisks = row + 1
+// for each row: print number of asterisks
 
+// try to formulate above logical solution:
+starting from x = 0 until x = n-1
+  print asterisks (x + 1) times
 }
 
 ```
