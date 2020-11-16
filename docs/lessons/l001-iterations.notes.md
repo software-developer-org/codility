@@ -253,10 +253,10 @@ Pseudo code using figurative language
 // highlight spaces with 's'
 
 ---
-
-s \* \* \* \* _ s
-s s _ \* _ s s
-s s s _ s s s
+* * * * * * *
+s * * * * * s
+s s * * * s s
+s s s * s s s
 
 // describe asterisks, spaces at start (prefix) and end (suffix) per row
 row 0: prefix with 0 spaces, 7 asterisks, suffix with 0 spaces
