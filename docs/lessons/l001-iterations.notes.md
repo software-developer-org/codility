@@ -377,11 +377,11 @@ fibonacci(n) {
 }
 ```
 
-# Looping over Collections of Values
+# Looping Over Collections of Values
 
 Arrays, Sets and Dictionaries are [abstract data types](https://en.wikipedia.org/wiki/Abstract_data_type).
 
-## Array for Ordered Lists
+## Array For Ordered Lists
 
 Definition on [Wikipedia](https://en.wikipedia.org/wiki/Array_data_type).
 
@@ -394,7 +394,7 @@ Loops in same order as defined in array:
  print day
 ```
 
-## Set does not Guarantee Order
+## Set Does Not Guarantee Order
 
 Definition on [Wikipedia](<https://en.wikipedia.org/wiki/Set_(abstract_data_type)>).
 
