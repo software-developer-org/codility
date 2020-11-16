@@ -23,9 +23,7 @@ node src/lesson-001-iterations/l001-iterations.study.js
 
 ## Iterations
 
-### Lesson 1
-
-- [Iterations notes](docs/lessons/l001-iterations.notes.md)
+- [Lesson 1 - Iterations notes](docs/lessons/l001-iterations.notes.md)
 
 # Resources
 
