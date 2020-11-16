@@ -32,4 +32,4 @@ node src/lesson-001-iterations/l001-iterations.study.js
 - [Mathematical recipes (for programmers)](https://math.recipes/Math-recipes.pdf)
 - [Big-O Notation Explained: Definition & Examples (Part 1)](https://www.codility.com/blog/explanation-big-o-notation/)
 - [Big-O Notation Explained for Not-So-Technical People (Part 2)](https://www.codility.com/blog/big-o-notation-for-non-techies-continued/)
-- [Big-O Notation Explained: The Curse of CC All (Part 3)](https://www.codility.com/blog/
+- [Big-O Notation Explained: The Curse of CC All (Part 3)](https://www.codility.com/blog/)
