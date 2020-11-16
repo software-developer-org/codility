@@ -24,18 +24,36 @@
  *
  */
 function solution(N) {
+  // summary and score: https://app.codility.com/demo/results/trainingD3ATGK-B6Q/
   // convert N to binary
   // example: N=14479856
   // binary representation is 110111001111000111110000
   // to string: 110111001111000111110000 => "110111001111000111110000"
+  const binary = new Number(N).toString(2);
   // create array with separator '1' => ["", "", "0", "", "", "00", "", "", "", "000", "", "", "", "", "0000"]
+  const arrayWithZeroValuesOrEmpty = binary.split('1');
   // return 0 if array.length = 1;
+  if (arrayWithZeroValuesOrEmpty.length === 1) {
+    return 0;
+  }
   // remove last element if value is not empty (""): ["", "", "0", "", "", "00", "", "", "", "000", "", "", "", ""]
+  const lastIndex = arrayWithZeroValuesOrEmpty.length - 1;
+  if (arrayWithZeroValuesOrEmpty[lastIndex] !== '') {
+    arrayWithZeroValuesOrEmpty.pop();
+  }
   // return 0 if array.length = 1;
+  if (arrayWithZeroValuesOrEmpty.length === 1) {
+    return 0;
+  }
   // filter empty values: ["0", "00", "000"]
+  const arrayWithZeroValues = arrayWithZeroValuesOrEmpty.filter((v) => v !== '');
   // return 0 if array.length = 0;
+  if (arrayWithZeroValues.length === 0) {
+    return 0;
+  }
   // reduce by longest value: "000"
   // return length
+  return arrayWithZeroValues.reduce((prev, curr) => (prev.length > curr.length ? prev : curr)).length;
 }
 
 // export for test usage
