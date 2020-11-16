@@ -353,7 +353,7 @@ Pseudo code, power and [modulo](https://en.wikipedia.org/wiki/Modulo_operation) 
 
 power = 1;
 while (power <= 308) do: // 308 is highest value in Javascript for using power
-    if (n === n module base^power) return power
+    if (n === n modulo base^power) return power
     power += 1
 
 ```
