@@ -19,7 +19,7 @@ Logical solution expressed in pseudo code:
 factorial(n) {
     // example for !4 (factorial of 4) where n = 4
     // GOAL: 1 * 2 * 3 * 4
-    // Since we start with n, we can also say 4 *3 * 2* 1
+    // Since we start with n, we can also say 4 * 3 * 2 * 1
     // formalized it looks like this: n * (n - 1) * (n - 2) * ... * 1
 }
 ```
