@@ -24,7 +24,18 @@
  *
  */
 function solution(N) {
-  // write your code in JavaScript
+  // convert N to binary
+  // example: N=14479856
+  // binary representation is 110111001111000111110000
+  // to string: 110111001111000111110000 => "110111001111000111110000"
+  // create array with separator '1' => ["", "", "0", "", "", "00", "", "", "", "000", "", "", "", "", "0000"]
+  // return 0 if array.length = 1;
+  // remove last element if value is not empty (""): ["", "", "0", "", "", "00", "", "", "", "000", "", "", "", ""]
+  // return 0 if array.length = 1;
+  // filter empty values: ["0", "00", "000"]
+  // return 0 if array.length = 0;
+  // reduce by longest value: "000"
+  // return length
 }
 
 // export for test usage
