@@ -379,7 +379,7 @@ fibonacci(n) {
 
 # Looping over collections of values
 
-Arrays, Sets and Dictionaries are [abstract data types](<https://en.wikipedia.org/wiki/Set_(abstract_data_type)>).
+Arrays, Sets and Dictionaries are [abstract data types](https://en.wikipedia.org/wiki/Abstract_data_type).
 
 ## Array for ordered lists
 
