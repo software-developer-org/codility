@@ -236,34 +236,37 @@ contain 2n − 1, 2n − 3, . . . , 3, 1 asterisks and should be indented by 0, 
 spaces. For example, for n = 4 the triangle should appear as follows:
 
 ```
-
----
-
----
-
+* * * * * * *
+  * * * * *
     * * *
       *
-
 ```
 
 Pseudo code using figurative language
 
 ```
-
 // highlight spaces with 's'
-
 ---
 * * * * * * *
 s * * * * * s
 s s * * * s s
 s s s * s s s
 
+```
+
+Pseudo code describe above:
+
+```
 // describe asterisks, spaces at start (prefix) and end (suffix) per row
 row 0: prefix with 0 spaces, 7 asterisks, suffix with 0 spaces
 row 1: prefix with 1 spaces, 5 asterisks, suffix with 1 spaces
 row 2: prefix with 2 spaces, 3 asterisks, suffix with 2 spaces
 row 3: prefix with 3 spaces, 1 asterisks, suffix with 3 spaces
+```
 
+Pseudo code solution:
+
+```
 // formalized:
 starting from row = 0 until row = n - 1
 prefix and suffix = row;
