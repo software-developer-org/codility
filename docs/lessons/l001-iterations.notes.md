@@ -283,7 +283,7 @@ row 0: 1
 row 1: 1 1
 row 2: 1 2 1
 row 3: 1 3 3 1
-row 4:1 4 6 4 1
+row 4: 1 4 6 4 1
 
 ```
 
@@ -302,7 +302,7 @@ prepare and describe row and col positions:
 
 ```
 row 0: (c0r0 = 1)
-row 1: (c0r1 = 1), (c0r1 = 1)
+row 1: (c0r1 = 1), (c1r1 = 1)
 row 2: (c0r2 = 1), (c1r2 = 2), (c2r2 = 1)
 row 3: (c0r3 = 1), (c1r3 = 3), (c2r3 = 3), (c3r3 = 1)
 row 4: (c0r4 = 1), (c1r4 = 4), (c2r4 = 6), (c3r4 = 4), (c4r4 = 1)
