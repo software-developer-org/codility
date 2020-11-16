@@ -5,9 +5,9 @@ Codility:
 - [Iterations](https://app.codility.com/programmers/lessons/1-iterations/)
 - [Open Reading Material.PDF](docs/lessons/l001-iterations.pdf)
 
-# For loops
+# For Loops
 
-## Factorial exercise
+## Factorial Exercise
 
 Read factorial on [Wikipedia](https://en.wikipedia.org/wiki/Factorial).
 
@@ -325,9 +325,9 @@ Triangle solution:
 node src/lesson-001-iterations/l001-iterations.study.js
 ```
 
-# While loops
+# While Loops
 
-## Count number of digits
+## Count Number of Digits
 
 ```
 // eg. for n = 99 => 2 digits
@@ -359,7 +359,7 @@ while (power <= 308) do: // 308 is highest value in Javascript for using power
 
 ```
 
-## [Fibonacci numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
+## [Fibonacci Numbers](https://en.wikipedia.org/wiki/Fibonacci_number)
 
 ```javascript
 // show Fibonacci numbers from 0 until n
@@ -377,11 +377,11 @@ fibonacci(n) {
 }
 ```
 
-# Looping over collections of values
+# Looping over Collections of Values
 
 Arrays, Sets and Dictionaries are [abstract data types](https://en.wikipedia.org/wiki/Abstract_data_type).
 
-## Array for ordered lists
+## Array for Ordered Lists
 
 Definition on [Wikipedia](https://en.wikipedia.org/wiki/Array_data_type).
 
@@ -394,7 +394,7 @@ Loops in same order as defined in array:
  print day
 ```
 
-## Set does not guarantee order
+## Set does not Guarantee Order
 
 Definition on [Wikipedia](<https://en.wikipedia.org/wiki/Set_(abstract_data_type)>).
 
@@ -418,7 +418,7 @@ Sunday
 Saturday
 ```
 
-## Dictionary with key: value
+## Dictionary with Key-/Value-Pairs
 
 Dictionaries also known as [associative array](https://en.wikipedia.org/wiki/Associative_array).
 
