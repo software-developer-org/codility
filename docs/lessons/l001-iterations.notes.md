@@ -454,3 +454,19 @@ arr[1] = 'second'
 Object.keys(arr)
 > ["0", "1", "3"]
 ```
+
+# Resources
+
+JavaScript:
+
+- [Number.toString(radix)](https://www.w3schools.com/jsref/jsref_tostring_number.asp): allows conversion to other numeral representation:
+  - binary: 3.toString(2) => '11'
+  - hex: 26.toString(16) => '1a'
+- [parseInt(string [, radix])](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt): allows conversion from other numeral representation:
+  - parseInt('11', 2) => 3
+  - parseInt('1a', 16) => 26
+- [Array operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [String functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+  - slice() creates an array: ',0,1,2,'.split(',) => ['', '0','1', '2', '']
+  - splice() array-like operator: 'monkey'.slice(3) => 'key'
+  - index-based access: 'abc'[0] => a
