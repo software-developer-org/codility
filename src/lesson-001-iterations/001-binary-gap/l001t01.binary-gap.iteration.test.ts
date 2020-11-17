@@ -92,7 +92,7 @@ describe('iteration test', () => {
     expect(output).toEqual(3);
   });
 
-  it('huge gap 111111111111111111111111111111111111111111111111111', () => {
+  it('huge binary 111111111111111111111111111111111111111111111111111', () => {
     const output = solution(binaryToNumber('111111111111111111111111111111111111111111111111111'));
     // expected gap
     expect(output).toEqual(0);

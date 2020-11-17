@@ -444,7 +444,7 @@ NOTE: In JavaScript an Array is also presented as a dictionary where index are p
 
 ```javascript
 arr = new Array(3)
-> {length: 4}
+> {length: 3}
 arr.push('lastValue')
 > {0: 3: "lastValue", length: 4}
 arr[0] = 'first'
