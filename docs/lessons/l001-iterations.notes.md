@@ -73,7 +73,7 @@ void print(int n)
 
 > Why do we care?
 > <br><br>
-> The tail recursive functions considered better than non tail recursive functions as **tail-recursion can be optimized by compiler**. The idea used by compilers to optimize tail-recursive functions is simple, since the recursive call is the last statement, there is nothing left to do in the current function, so saving the current function’s stack frame is of no use (See [this](https://www.geeksforgeeks.org/tail-call-elimination/) for more details).
+> The tail recursive functions considered better than non-tail recursive functions as **tail-recursion can be optimized by compiler**. The idea used by compilers to optimize tail-recursive functions is simple, since the recursive call is the last statement, there is nothing left to do in the current function, so saving the current function’s stack frame is of no use (See [this](https://www.geeksforgeeks.org/tail-call-elimination/) for more details).
 > <br><br>
 > Can a non-tail recursive function be written as tail-recursive to optimize it?
 > <br><br>
@@ -92,7 +92,7 @@ Recursive example:
 static int fact(int n)
 {
   if (n == 0) return 1;
-  return n*fact(n-1);
+  return n * fact(n-1);
 }
 ```
 
@@ -224,10 +224,9 @@ Pseudo code with formalized algorithm:
 // for each row: print number of asterisks
 
 // try to formulate above logical solution:
-starting from x = 0 until x = n-1
+starting from x = 0 until x = n - 1
   print asterisks (x + 1) times
 }
-
 ```
 
 Example: Let’s print a triangle made of asterisks (‘\*’) separated by spaces and consisting
