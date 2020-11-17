@@ -35,4 +35,15 @@ function findFactorialSecondVariant(inputNumber) {
   return total;
 }
 
+//Example triangle using nested for-loop
+function makeTriangleWithNestedForLoop(n) {
+  for (var i = 1; i <= n; i++) {
+    var triangle = '';
+    for (var j = 1; j <= i; j++) {
+      triangle += '* ';
+    }
+    console.log(triangle);
+  }
+}
+
 module.exports = { findFactorial, findFactorialSecondVariant };
