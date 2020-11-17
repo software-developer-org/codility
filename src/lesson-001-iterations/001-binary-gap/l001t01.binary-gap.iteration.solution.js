@@ -26,21 +26,17 @@
 function solution(N) {
   // summary and score: https://app.codility.com/demo/results/trainingD3ATGK-B6Q/
   // convert N to binary
-  // example: N=14479856
+  // example: N=14479856, where N is >= 1
   // binary representation is 110111001111000111110000
   // to string: 110111001111000111110000 => "110111001111000111110000"
   const binary = new Number(N).toString(2);
+
   // create array with separator '1' => ["", "", "0", "", "", "00", "", "", "", "000", "", "", "", "", "0000"]
+  // since N is >= 1 there is always a binary representation, array is never empty!
   const arrayWithZeroValuesOrEmpty = binary.split('1');
-  // return 0 if array.length = 1;
-  if (arrayWithZeroValuesOrEmpty.length === 1) {
-    return 0;
-  }
-  // remove last element if value is not empty (""): ["", "", "0", "", "", "00", "", "", "", "000", "", "", "", ""]
-  const lastIndex = arrayWithZeroValuesOrEmpty.length - 1;
-  if (arrayWithZeroValuesOrEmpty[lastIndex] !== '') {
-    arrayWithZeroValuesOrEmpty.pop();
-  }
+
+  // last element can always be removed! ["", "", "0", "", "", "00", "", "", "", "000", "", "", "", ""]
+  arrayWithZeroValuesOrEmpty.pop();
   // return 0 if array.length = 1;
   if (arrayWithZeroValuesOrEmpty.length === 1) {
     return 0;
