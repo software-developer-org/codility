@@ -46,4 +46,11 @@ function makeTriangleWithNestedForLoop(n) {
   }
 }
 
+// Print triangle using repeat()
+function printTriangleUsingRepeat(n) {
+  for (let i = 0; i <= n; i++) {
+    console.log('* '.repeat(i));
+  }
+}
+
 module.exports = { findFactorial, findFactorialSecondVariant };
