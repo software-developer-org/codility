@@ -12,6 +12,8 @@ for (let i = 0; i < 100; i++) {
  * so we have result = 4 * 3 * 2 * 1
  *
  */
+
+// Find factorial with for-loop
 function findFactorial(n) {
   // Check if input is 0 or 1, so factorial wouldn't have any sense
   if (n == 0 || n == 1) return 1;
@@ -22,4 +24,15 @@ function findFactorial(n) {
   }
   return n;
 }
-module.exports = findFactorial;
+
+// Second variant with for-loop
+function findFactorialSecondVariant(inputNumber) {
+  var total = 1;
+
+  for (i = 0; i < inputNumber; i++) {
+    total = total * (inputNumber - i);
+  }
+  return total;
+}
+
+module.exports = { findFactorial, findFactorialSecondVariant };
