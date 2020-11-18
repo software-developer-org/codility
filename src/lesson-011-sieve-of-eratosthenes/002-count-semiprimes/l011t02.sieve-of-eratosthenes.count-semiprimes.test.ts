@@ -38,4 +38,8 @@ describe('countSemiprimes test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if countSemiprimes is [10,4,0]', () => {
+    const example = [26, [1, 4, 16], [26, 10, 20]];
+    expect(solution(example[0], example[1], example[2])).toEqual([10, 4, 0]);
+  });
 });

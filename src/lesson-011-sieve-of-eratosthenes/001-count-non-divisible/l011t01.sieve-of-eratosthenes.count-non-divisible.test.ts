@@ -32,4 +32,8 @@ describe('countNonDivisible test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if countNonDivisible is [2,4,3,2,0]', () => {
+    const example = [3, 1, 2, 3, 6];
+    expect(solution(example)).toEqual([2, 4, 3, 2, 0]);
+  });
 });
