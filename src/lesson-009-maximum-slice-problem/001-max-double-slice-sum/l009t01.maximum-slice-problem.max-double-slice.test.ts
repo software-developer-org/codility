@@ -31,4 +31,8 @@ describe('maxDoubleSliceSum test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if MaxDoubleSliceSum is 17', () => {
+    const example = [3, 2, 6, -1, 4, 5, -1, 2];
+    expect(solution(example)).toEqual(17);
+  });
 });

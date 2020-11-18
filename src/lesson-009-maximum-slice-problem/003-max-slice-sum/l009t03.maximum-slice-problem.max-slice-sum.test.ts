@@ -32,4 +32,8 @@ describe('maxSliceSum test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if MaxSliceSum is 5', () => {
+    const example = [3, 2, -6, 4, 0];
+    expect(solution(example)).toEqual(5);
+  });
 });

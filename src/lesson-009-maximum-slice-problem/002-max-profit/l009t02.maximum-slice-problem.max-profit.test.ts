@@ -32,4 +32,8 @@ describe('maxProfit test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if maxProfit is 356', () => {
+    const example = [23171, 21011, 21123, 21366, 21013, 21367];
+    expect(solution(example)).toEqual(356);
+  });
 });
