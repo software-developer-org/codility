@@ -38,4 +38,8 @@ describe('minMaxDivision test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if minMaxDivision is 6', () => {
+    const example = [3, 5, [2, 1, 5, 1, 2, 2, 2]];
+    expect(solution(example[0], example[1], example[2])).toEqual(6);
+  });
 });

@@ -38,4 +38,12 @@ describe('nailingPlanks test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if nailingPlanks is 4', () => {
+    const example = [
+      [1, 4, 5, 8],
+      [4, 5, 9, 10],
+      [4, 6, 7, 10, 2],
+    ];
+    expect(solution(example[0], example[1], example[2])).toEqual(4);
+  });
 });
