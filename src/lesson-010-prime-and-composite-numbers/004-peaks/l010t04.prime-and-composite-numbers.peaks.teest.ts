@@ -32,4 +32,8 @@ describe('peaks test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if peaks is 0', () => {
+    const example = [1, 2, 3, 4, 1, 2, 3, 4, 6, 2];
+    expect(solution(example)).toEqual(0);
+  });
 });

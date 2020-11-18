@@ -32,4 +32,8 @@ describe('minPerimeterRectangle test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if minPerimeterRectangle is 22 ', () => {
+    const example = 30;
+    expect(solution(example)).toEqual(22);
+  });
 });

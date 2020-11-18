@@ -32,4 +32,8 @@ describe('countFactors test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if countFactors is 8', () => {
+    const example = 24;
+    expect(solution(example)).toEqual(8);
+  });
 });

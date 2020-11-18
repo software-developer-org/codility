@@ -32,4 +32,8 @@ describe('flags test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if flags is 3', () => {
+    const example = [1, 5, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2];
+    expect(solution(example)).toEqual(3);
+  });
 });
