@@ -32,4 +32,8 @@ describe('fibFrog test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if fibFrog is 3', () => {
+    const example = [0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0];
+    expect(solution(example)).toEqual(3);
+  });
 });

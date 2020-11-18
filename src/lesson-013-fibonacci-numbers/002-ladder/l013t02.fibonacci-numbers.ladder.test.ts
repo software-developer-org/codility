@@ -35,4 +35,11 @@ describe('ladder test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if ladder is  [5,1,8,0,1]', () => {
+    const example = [
+      [4, 4, 5, 5, 1],
+      [3, 2, 4, 3, 1],
+    ];
+    expect(solution(example[0], example[1])).toEqual([5, 1, 8, 0, 1]);
+  });
 });
