@@ -32,4 +32,8 @@ describe('equiLeader test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if equiLeader is 2', () => {
+    const example = [4, 3, 4, 4, 4, 2];
+    expect(solution(example)).toEqual(2);
+  });
 });

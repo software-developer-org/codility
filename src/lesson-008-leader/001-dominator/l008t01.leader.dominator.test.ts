@@ -32,4 +32,9 @@ describe('dominator test', () => {
       console.log('Result:', output);
     });
   });
+
+  it('test if dominator is 3', () => {
+    const example = [3, 4, 3, 2, 3, -1, 3, 3];
+    expect(solution(example)).toEqual(3);
+  });
 });
