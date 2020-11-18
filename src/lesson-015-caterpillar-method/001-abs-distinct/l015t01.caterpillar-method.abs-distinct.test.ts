@@ -32,4 +32,8 @@ describe('absDistinct test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if absDistinct is 5', () => {
+    const example = [-5, -3, -1, 0, 3, 6];
+    expect(solution(example)).toEqual(5);
+  });
 });

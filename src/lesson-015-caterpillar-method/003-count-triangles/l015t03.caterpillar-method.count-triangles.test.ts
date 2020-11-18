@@ -32,4 +32,8 @@ describe('countTriangles test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if countTriangles is 4', () => {
+    const example = [10, 2, 5, 1, 8, 12];
+    expect(solution(example)).toEqual(4);
+  });
 });

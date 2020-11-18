@@ -32,4 +32,12 @@ describe('minAbsSumOfTwo test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if minAbsSumOfTwo is 1', () => {
+    const example = [1, 4, -3];
+    expect(solution(example)).toEqual(1);
+  });
+  it('test if minAbsSumOfTwo is 3', () => {
+    const example = [-8, 4, 5, -10, 3];
+    expect(solution(example)).toEqual(3);
+  });
 });

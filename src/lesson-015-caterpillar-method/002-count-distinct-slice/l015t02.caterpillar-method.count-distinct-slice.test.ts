@@ -35,4 +35,8 @@ describe('countDistinctSlices test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if countDistinctSlices is 9', () => {
+    const example = [6, [3, 4, 5, 5, 2]];
+    expect(solution(example[0], example[1])).toEqual(9);
+  });
 });
