@@ -35,4 +35,11 @@ describe('commonPrimeDivisor test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if commonPrimeDivisor is 1', () => {
+    const example = [
+      [15, 10, 3],
+      [75, 30, 5],
+    ];
+    expect(solution(example)).toEqual(1);
+  });
 });

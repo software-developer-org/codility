@@ -35,4 +35,8 @@ describe('chocolatesByNumbers test', () => {
       console.log('Result:', output);
     });
   });
+  it('test if chocolatesByNumbers is 5', () => {
+    const example = [10, 4];
+    expect(solution(example[0], example[1])).toEqual(5);
+  });
 });
