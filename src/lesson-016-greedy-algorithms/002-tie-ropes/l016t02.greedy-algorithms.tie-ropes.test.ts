@@ -35,4 +35,13 @@ describe('tieRopes test', () => {
       console.log('Result:', output);
     });
   });
+
+  it('testing solution(K, A), should return 3', () => {
+    // maximum numbers of tied ropes of length greater than or equal to a given integer K = 4 from array A = [1, 2, 3, 4, 1, 1, 3]
+    const K = 4;
+    const A = [1, 2, 3, 4, 1, 1, 3];
+    const result = 3;
+    // expected result should be 3
+    expect(solution(K, A)).toEqual(result);
+  });
 });
