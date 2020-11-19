@@ -32,4 +32,22 @@ describe('strSymmetryPoint test', () => {
       console.log('Result:', output);
     });
   });
+
+  it("testing if solution(S = 'racing'), returns -1", () => {
+    const S = 'racing';
+    const output = solution(S);
+    expect(output).toEqual(-1);
+  });
+
+  it("testing if solution(S = 'racecar'), returns 3", () => {
+    const S = 'racecar';
+    const output = solution(S);
+    expect(output).toEqual(3);
+  });
+
+  it("testing if solution(S = 'x'), returns 0", () => {
+    const S = 'x';
+    const output = solution(S);
+    expect(output).toEqual(0);
+  });
 });
