@@ -38,4 +38,12 @@ describe('dwarfsRafting test', () => {
       console.log('Result:', output);
     });
   });
+
+  it("testing solution(N = 4, S = '1B 1C 4B 1D 2A', T = '3B 2D', return 6", () => {
+    const N = 4;
+    const S = '1B 1C 4B 1D 2A';
+    const T = '3B 2D';
+    const output = solution(N, S, T);
+    expect(output).toEqual(6);
+  });
 });
