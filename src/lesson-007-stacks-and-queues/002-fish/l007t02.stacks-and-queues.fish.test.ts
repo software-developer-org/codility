@@ -1,38 +1,10 @@
-/**
- * An array where each element is the input for the solution function. Syntax:
- *
- * [ testset1, testset2, ..., testsetN]
- *
- * Where test set is:
- *
- * {
- *   A: [x1, x2],
- *   B: [x3, x4],
- * }
- *
- * Example:
- *
- * [
- *   { // test input 1
- *     A: [ [1, 2],
- *     B:   [3, 4] ],
- *   },
- *   { // test input 2
- *     A: [ [5, 11],
- *     B:   [7, 2] ],
- *   }
- * ]
- */
-const testData = [];
-
 import solution = require('./l007t02.stacks-and-queues.fish.solution');
 
 describe('fish test', () => {
-  it('test solution', () => {
-    testData.forEach((testSet) => {
-      console.log('Input:', testSet);
-      const output = solution(testSet[0], testSet[1]);
-      console.log('Result:', output);
-    });
+  it('test A: Only Small Integers > 0, B: 1 Fish in Other Direction', () => {
+    const a = [4, 3, 2, 1, 5];
+    const b = [0, 1, 0, 0, 0];
+    // except fish 0 and 4 everybody dies
+    expect(solution(a, b)).toEqual(2);
   });
 });
