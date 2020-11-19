@@ -22,7 +22,7 @@
  */
 const testData = [];
 
-import solution = require('./l017t02.dynamic-programming.number-solitaire.solution');
+import solution = require('./l017t02.number-solitaire.solution');
 
 describe('minAbsSum test', () => {
   it('test solution', () => {
@@ -31,5 +31,11 @@ describe('minAbsSum test', () => {
       const output = solution(testSet);
       console.log('Result:', output);
     });
+  });
+
+  it('test if A = [1, -2, 0, 9, -1, -2], return 8', () => {
+    const A = [1, -2, 0, 9, -1, -2];
+    const output = solution(A);
+    expect(output).toEqual(8);
   });
 });
