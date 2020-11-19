@@ -25,6 +25,18 @@ const testData = [];
 
 import solution = require('./l099t05.future-training.tree-height.solution');
 
+class Tree {
+  constructor(x, l, r) {
+    this.x = x;
+    this.l = l;
+    this.r = r;
+  }
+
+  x = 0;
+  l = Tree;
+  r = Tree;
+}
+
 describe('treeHeight test', () => {
   it('test solution', () => {
     testData.forEach((testSet) => {

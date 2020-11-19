@@ -33,4 +33,10 @@ describe('arrayInversionCount test', () => {
       console.log('Result:', output);
     });
   });
+
+  it('testing if solution(A = [-1, 6, 3, 4, 7, 4]), returns 4', () => {
+    const A = [-1, 6, 3, 4, 7, 4];
+    const output = solution(A);
+    expect(output).toEqual(4);
+  });
 });
