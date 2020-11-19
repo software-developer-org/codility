@@ -35,4 +35,18 @@ describe('diamondCount test', () => {
       console.log('Result:', output);
     });
   });
+
+  it('testing if solution(X = [1, 1, 2, 2, 2, 3, 3], Y = [3, 4, 1, 3, 5, 3, 4]), returns 2', () => {
+    const X = [1, 1, 2, 2, 2, 3, 3];
+    const Y = [3, 4, 1, 3, 5, 3, 4];
+    const output = solution(X, Y);
+    expect(output).toEqual(2);
+  });
+
+  it('testing if solution(X = [1, 2, 3, 3, 2, 1], Y = [1, 1, 1, 2, 2, 2]), returns 0', () => {
+    const X = [1, 2, 3, 3, 2, 1];
+    const Y = [1, 1, 1, 2, 2, 2];
+    const output = solution(X, Y);
+    expect(output).toEqual(0);
+  });
 });
