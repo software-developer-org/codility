@@ -35,4 +35,11 @@ describe('rectangleGreaterBuildArea test', () => {
       console.log('Result:', output);
     });
   });
+
+  it('testing solution(A = [1, 2, 5, 1, 1, 2, 3, 5, 1], X = 5), returns 2', () => {
+    const A = [1, 2, 5, 1, 1, 2, 3, 5, 1];
+    const X = 5;
+    const output = solution(A, X);
+    expect(output).toEqual(2);
+  });
 });

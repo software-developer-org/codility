@@ -44,4 +44,34 @@ describe('hilbertMaze test', () => {
       console.log('Result:', output);
     });
   });
+
+  it('testing solution(N = 1, A = 2, B = 1, C = 3 and D = 4), returns 8', () => {
+    const N = 1;
+    const A = 2;
+    const B = 1;
+    const C = 3;
+    const D = 4;
+    const output = solution(N, A, B, C, D);
+    expect(output).toEqual(8);
+  });
+
+  it('testing solution(N = 2, A = 2, B = 5, C = 6 and D = 6), returns 7', () => {
+    const N = 2;
+    const A = 2;
+    const B = 5;
+    const C = 6;
+    const D = 6;
+    const output = solution(N, A, B, C, D);
+    expect(output).toEqual(7);
+  });
+
+  it('testing solution(N = 3, A = 6, B = 6, C = 10 and D = 13), returns 39', () => {
+    const N = 3;
+    const A = 6;
+    const B = 6;
+    const C = 10;
+    const D = 13;
+    const output = solution(N, A, B, C, D);
+    expect(output).toEqual(39);
+  });
 });

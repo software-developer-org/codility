@@ -35,4 +35,18 @@ describe('treeProduct test', () => {
       console.log('Result:', output);
     });
   });
+
+  it("testing solution(A = [0, 1, 1, 3, 3, 6, 7], B = [1, 2, 3, 4, 5, 3, 5]), returns '18'", () => {
+    const A = [0, 1, 1, 3, 3, 6, 7];
+    const B = [1, 2, 3, 4, 5, 3, 5];
+    const output = solution(A, B);
+    expect(output).toEqual('18');
+  });
+
+  it("testing solution(A = [0, 1], B = [1, 2]), returns '3'", () => {
+    const A = [0, 1];
+    const B = [1, 2];
+    const output = solution(A, B);
+    expect(output).toEqual('3');
+  });
 });
