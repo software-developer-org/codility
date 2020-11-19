@@ -1,35 +1,9 @@
-/**
- * An array where each element is the input for the solution function. Syntax:
- *
- * [ testset1, testset2, ..., testsetN]
- *
- * Where test set is:
- *
- * {
- *   A: [x1, x2],
- * }
- *
- * Example:
- *
- * [
- *   { // test input 1
- *     A: [1, 2],
- *   },
- *   { // test input 2
- *     A: [5, 1001],
- *   }
- * ]
- */
-const testData = [];
-
 import solution = require('./l006t03.sorting.number-of-disc-intersections.solution');
 
 describe('numberOfDiscsIntersection test', () => {
-  it('test solution', () => {
-    testData.forEach((testSet) => {
-      console.log('Input:', testSet);
-      const output = solution(testSet);
-      console.log('Result:', output);
-    });
+  it('test Small Integers', () => {
+    const output = solution([1, 5, 2, 1, 4, 0]);
+    // intersecting pairs < 10.000.000
+    expect(output).toEqual(11);
   });
 });

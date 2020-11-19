@@ -1,35 +1,16 @@
-/**
- * An array where each element is the input for the solution function. Syntax:
- *
- * [ testset1, testset2, ..., testsetN]
- *
- * Where test set is:
- *
- * {
- *   A: [x1, x2],
- * }
- *
- * Example:
- *
- * [
- *   { // test input 1
- *     A: [1, 2],
- *   },
- *   { // test input 2
- *     A: [5, 11],
- *   }
- * ]
- */
-const testData = [];
-
 import solution = require('./l006t04.sorting.triangle.solution');
 
 describe('triangle test', () => {
-  it('test solution', () => {
-    testData.forEach((testSet) => {
-      console.log('Input:', testSet);
-      const output = solution(testSet);
-      console.log('Result:', output);
-    });
+  it('test Array > 0, Only Positive Values, Triangular Occures', () => {
+    const output = solution([10, 2, 5, 1, 8, 20]);
+    // triplet (0, 2, 4) is triangular
+    // result = 1
+    expect(output).toEqual(1);
+  });
+  it('test Array > 0, Only Positive Values, No Triangular Occures', () => {
+    const output = solution([10, 2, 5, 1, 8, 20]);
+    // no triplet is triangular
+    // result = 0
+    expect(output).toEqual(1);
   });
 });
