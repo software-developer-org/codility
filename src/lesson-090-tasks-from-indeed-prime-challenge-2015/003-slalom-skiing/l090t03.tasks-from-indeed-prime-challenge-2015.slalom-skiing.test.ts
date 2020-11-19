@@ -32,4 +32,16 @@ describe('slalomSkiing test', () => {
       console.log('Result:', output);
     });
   });
+
+  it('testing if solution(A = [15, 13, 5, 7, 4, 10, 12, 8, 2, 11, 6, 9, 3], return 8', () => {
+    const A = [15, 13, 5, 7, 4, 10, 12, 8, 2, 11, 6, 9, 3];
+    const output = solution(A);
+    expect(output).toEqual(8);
+  });
+
+  it('testing if solution(A = [1, 5], return 2', () => {
+    const A = [1, 5];
+    const output = solution(A);
+    expect(output).toEqual(2);
+  });
 });

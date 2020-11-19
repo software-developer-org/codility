@@ -32,4 +32,16 @@ describe('longestPassword test', () => {
       console.log('Result:', output);
     });
   });
+
+  it("testing if solution(S = 'test 5 a0A pass007 ?xy1' return 7", () => {
+    const S = 'test 5 a0A pass007 ?xy1';
+    const output = solution(S);
+    expect(output).toEqual(7);
+  });
+
+  it("testing if solution(S = 'test' return -1", () => {
+    const S = 'test';
+    const output = solution(S);
+    expect(output).toEqual(-1);
+  });
 });
