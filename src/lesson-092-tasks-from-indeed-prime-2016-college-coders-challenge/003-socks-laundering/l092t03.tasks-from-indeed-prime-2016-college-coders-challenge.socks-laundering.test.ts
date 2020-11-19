@@ -38,4 +38,12 @@ describe('socksLaundering test', () => {
       console.log('Result:', output);
     });
   });
+
+  it('testing if solution(K = 2, C = [1, 2, 1, 1], D = [1, 4, 3, 2, 4]), returns 3', () => {
+    const K = 2;
+    const C = [1, 2, 1, 1];
+    const D = [1, 4, 3, 2, 4];
+    const output = solution(K, C, D);
+    expect(output).toEqual(3);
+  });
 });

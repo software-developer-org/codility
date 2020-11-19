@@ -35,4 +35,18 @@ describe('tennisTournament test', () => {
       console.log('Result:', output);
     });
   });
+
+  it('testing if solution(P = 5, C = 3), returns 2', () => {
+    const P = 5;
+    const C = 3;
+    const output = solution(P, C);
+    expect(output).toEqual(2);
+  });
+
+  it('testing if solution(P = 10, C = 3), returns 3', () => {
+    const P = 10;
+    const C = 3;
+    const output = solution(P, C);
+    expect(output).toEqual(3);
+  });
 });
