@@ -1,35 +1,13 @@
-/**
- * An array where each element is the input for the solution function. Syntax:
- *
- * [ testset1, testset2, ..., testsetN]
- *
- * Where test set is:
- *
- * {
- *   A: [x1, x2, x3],
- * }
- *
- * Example:
- *
- * [
- *   { // test input 1
- *     A: [1, 2, 3],
- *   },
- *   { // test input 2
- *     A: [5, 10, 75],
- *   }
- * ]
- */
-const testData = [];
-
 import solution = require('./l003t01.time-complexity.frog-jump.solution');
 
 describe('frogJump test', () => {
-  it('test solution', () => {
-    testData.forEach((testSet) => {
-      console.log('Input:', testSet);
-      const output = solution(testSet[0], testSet[1], testSet[2]);
-      console.log('Result:', output);
-    });
+  it('test X = 10 > 1, D = 30 < Y = 85', () => {
+    // more than one jump (D) needed, completed distance exceeds target position
+    // 85 < (10 + 30 + 30 + 30)
+    const x = 10;
+    const y = 85;
+    const d = 30;
+    // expected result = 3
+    expect(solution(x, y, d)).toEqual(3);
   });
 });
