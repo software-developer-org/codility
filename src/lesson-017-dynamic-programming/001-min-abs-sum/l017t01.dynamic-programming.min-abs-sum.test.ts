@@ -32,4 +32,12 @@ describe('minAbsSum test', () => {
       console.log('Result:', output);
     });
   });
+
+  it('testing solution(A), should return 0', () => {
+    // computed the minimum possible value of a given array A of N integers
+    const A = [1, 5, 2, -2];
+    const output = solution(A);
+    // expected output should be 0
+    expect(output).toEqual(0);
+  });
 });
