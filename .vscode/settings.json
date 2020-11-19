@@ -11,5 +11,6 @@
     "source.fixAll.eslint": true
   },
   "eslint.alwaysShowStatus": true,
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on"
 }
