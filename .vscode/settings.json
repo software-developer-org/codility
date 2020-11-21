@@ -1,12 +1,11 @@
 {
-  "liveServer.settings.port": 5501,
   "eslint.debug": true,
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
-  "prettier.disableLanguages": ["js"],
+  "DISABLEDprettier.disableLanguages": ["js"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
