@@ -1,5 +1,5 @@
 /**
- * https://app.codility.com/programmers/lessons/17-dynamic_programming/min_abs_sum/start/
+ * https://app.codility.com/programmers/lessons/17-dynamic_programming/min_abs_sum/
  *
  * For a given array A of N integers and a sequence S of N integers from the set {−1, 1}, we define val(A, S) as follows:
  *
@@ -13,7 +13,8 @@
  *
  *  function solution(A);
  *
- * that, given an array A of N integers, computes the minimum value of val(A,S) from all possible values of val(A,S) for all possible sequences S of N integers from the set {−1, 1}.
+ * that, given an array A of N integers, computes the minimum value of val(A,S) from all possible values of val(A,S) for
+ * all possible sequences S of N integers from the set {−1, 1}.
  *
  * For example, given array:
  *
@@ -27,9 +28,7 @@
  * Write an efficient algorithm for the following assumptions:
  *
  *  N is an integer within the range [0..20,000];
- *  each element of array A is an integer within the range [−100..100].
- *
- *
+ *  each element of array A is an integer within the range [−100..100]. *
  */
 
 function solution(A) {
