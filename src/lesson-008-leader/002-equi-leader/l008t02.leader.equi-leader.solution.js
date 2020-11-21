@@ -1,5 +1,5 @@
 /**
- * https://app.codility.com/programmers/lessons/8-leader/equi_leader
+ * https://app.codility.com/programmers/lessons/8-leader/equi_leader/
  *
  * A non-empty array A consisting of N integers is given.
  *
