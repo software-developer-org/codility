@@ -1,5 +1,5 @@
 /**
- * https://app.codility.com/programmers/lessons/99-future_training/array_inversion_count/start/
+ * https://app.codility.com/programmers/lessons/99-future_training/array_inversion_count/
  *
  * An array A consisting of N integers is given. An inversion is a pair of indexes (P, Q) such that P < Q and A[Q] < A[P].
  *
@@ -20,8 +20,8 @@
  *
  * Write an efficient algorithm for the following assumptions:
  *
- * N is an integer within the range [0..100,000];
- * each element of array A is an integer within the range [−2,147,483,648..2,147,483,647].
+ *    N is an integer within the range [0..100,000];
+ *    each element of array A is an integer within the range [−2,147,483,648..2,147,483,647].
  */
 
 function solution(A) {
