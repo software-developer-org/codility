@@ -14,13 +14,15 @@
  *   (-1, 3)   (3, 1)   (0, -1)   (-2, 1)
  * is convex.
  *
- *
+ * image located at folder l099t03-images: l099t03-polygon-concavity-index_1.png
  *
  * The convex hull of a finite set of points in a 2D plane is the smallest convex polygon that contains all points in this set.
  * For example, the convex hull of a set consisting of seven points whose Cartesian coordinates are:
  *
  *   (-1, 3)   (1, 2)   (3, 1)   (1, 1)   (0, -1)   (-2, 1)  (-1, 2)
  * is a polygon that has five vertices. When traversed clockwise, its vertices are:
+ *
+ * image located at folder l099t03-images: l099t03-polygon-concavity-index_2.png
  *
  *   (-1, 3)   (1, 2)   (3, 1)   (0, -1)   (-2, 1)
  *
@@ -68,7 +70,7 @@
  * the function should return either 2 or 6. These are the indices of the polygon lying strictly in its convex hull
  * (that is, not on the convex hull border).
  *
- *
+ * image located at folder l099t03-images: l099t03-polygon-concavity-index_3.png
  *
  * Write an efficient algorithm for the following assumptions:
  *
@@ -76,6 +78,8 @@
  *    the coordinates of each point in array A are integers within the range [−1,000,000,000..1,000,000,000];
  *    no two edges of the polygon A intersect, other than meeting at their endpoints;
  *    array A does not contain duplicate points.
+ *
+ * (resource for all images https://app.codility.com/programmers/lessons/)
  */
 
 function solution(A) {

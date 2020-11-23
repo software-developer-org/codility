@@ -18,6 +18,8 @@
  *
  * For example, a raft of size N = 4 is shown in the following illustration:
  *
+ * image located at folder l091t01-images: l091t01-dwarfs-rafting_1.png
+ * (resource: https://app.codility.com/programmers/lessons/)
  *
  * Barrels are marked as brown squares, and seats that are already occupied by dwarfs are labeled d.
  *
@@ -26,6 +28,8 @@
  *
  * In this example, the ferryman can accommodate at most six more dwarfs, as indicated by the green squares in the following diagram:
  *
+ * image located at folder l091t01-images: l091t01-dwarfs-rafting_2.png
+ * (resource: https://app.codility.com/programmers/lessons/)
  *
  * The raft is then balanced: both left and right halves have the same number of dwarfs (four), and both front and back halves have
  * the same number of dwarfs (also four).

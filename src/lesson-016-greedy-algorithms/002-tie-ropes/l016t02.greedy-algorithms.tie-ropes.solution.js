@@ -21,6 +21,9 @@
  *
  * The ropes are shown in the figure below.
  *
+ * image located at folder l016t02-images
+ * (resource: https://app.codility.com/)
+ *
  * We can tie:
  *
  *   rope 1 with rope 2 to produce a rope of length A[1] + A[2] = 5;

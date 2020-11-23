@@ -14,7 +14,8 @@
  *
  *  For example, given four clean socks and five dirty socks:
  *
- *
+ * image located at folder 092t03-images
+ * (https://app.codility.com/programmers/lessons/)
  *
  * If Bob's washing machine can clean at most K = 2 socks, then he can take a maximum of three pairs of clean socks. He can wash one
  * red sock and one green sock, numbered 1 and 2 respectively. Then he will have two pairs of red socks and one pair of green socks.

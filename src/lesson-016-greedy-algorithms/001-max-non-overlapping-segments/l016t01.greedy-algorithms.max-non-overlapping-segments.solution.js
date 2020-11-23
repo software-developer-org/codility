@@ -20,6 +20,9 @@
  *    A[4] = 9    B[4] = 10
  * The segments are shown in the figure below.
  *
+ * image located at folder l016t01-images
+ * (resource: https://app.codility.com/)
+ *
  * The size of a non-overlapping set containing a maximal number of segments is 3. For example,
  * possible sets are {0, 2, 3}, {0, 2, 4}, {1, 2, 3} or {1, 2, 4}.
  * There is no non-overlapping set with four segments.

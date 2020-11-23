@@ -41,7 +41,8 @@
  *   A[5] = 6    B[5] = 3
  *   A[6] = 7    B[6] = 5
  *
- *
+ * image located at folder l091t04-images
+ * (https://app.codility.com/programmers/lessons)
  *
  * the function should return "18" since the Elves can destroy bridges 1−3 and 3−5 (marked as dashed lines in the image above).
  * The created areas consist of 3, 3 and 2 guard posts.

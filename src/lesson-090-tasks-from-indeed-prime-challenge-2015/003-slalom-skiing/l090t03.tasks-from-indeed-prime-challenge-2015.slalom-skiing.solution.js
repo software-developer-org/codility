@@ -35,6 +35,9 @@
  *   A[11] = 9
  *   A[12] = 3
  *
+ * image located at folder l090t03-images
+ * (resource: https://app.codility.com/)
+ *
  * The picture above illustrates the example track with N = 13 gates and a course that passes eight gates. After starting, you ski
  * to the left (from your own perspective). You pass gates 2, 3, 5, 6 and then change direction to the right. After that you pass
  * gates 7, 8 and then change direction to the left. Finally, you pass gates 10, 11 and finish the slalom. There is no possible way

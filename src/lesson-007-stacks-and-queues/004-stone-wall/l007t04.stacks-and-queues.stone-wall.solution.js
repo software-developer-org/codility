@@ -25,6 +25,9 @@
  *   H[6] = 7    H[7] = 4    H[8] = 8
  * the function should return 7. The figure shows one possible arrangement of seven blocks.
  *
+ * image located at folder l007t04-images
+ * (resource: https://app.codility.com/)
+ *
  * Write an efficient algorithm for the following assumptions:
  *
  *         N is an integer within the range [1..100,000];

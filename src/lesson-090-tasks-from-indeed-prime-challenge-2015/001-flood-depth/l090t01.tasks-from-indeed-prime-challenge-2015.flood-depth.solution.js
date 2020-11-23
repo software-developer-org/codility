@@ -27,6 +27,9 @@
  *     A[10] = 2
  * The following picture illustrates the landscape after it has flooded:
  *
+ * image located at folder l090t01-images
+ * (resource: https://app.codility.com/)
+ *
  * The gray area is the rock floor described by the array A above and the blue area with dashed lines represents the water
  * filling the low-lying areas with maximum possible volume. Thus, blocks 3 and 5 have a water depth of 2 while
  * blocks 2, 4, 7 and 8 have a water depth of 1. Therefore, the maximum water depth of this area is 2.

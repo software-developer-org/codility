@@ -16,17 +16,19 @@
  * For example, for N = 7 points whose coordinates are specified in arrays X = [1, 1, 2, 2, 2, 3, 3] and Y = [3, 4, 1, 3, 5, 3, 4],
  * the function should return 2, since we can find two diamonds as shown in the picture below:
  *
- *
+ * image located at folder l092t02-images: l092t02-diamonds-count_1.png
  *
  * Given arrays: X = [1, 2, 3, 3, 2, 1], Y = [1, 1, 1, 2, 2, 2], the function should return 0, since there are no diamonds on the plane:
  *
- *
+ * image located at folder l092t02-images: l092t02-diamonds-count_2.png
  *
  * Write an efficient algorithm for the following assumptions:
  *
  *    N is an integer within the range [4..1,500];
  *    each element of arrays X, Y is an integer within the range [0..N−1];
  *    given N points are pairwise distinct.
+ *
+ *  (resource for all images https://app.codility.com/programmers/lessons/)
  */
 function solution(X, Y) {
   // write your code in JavaScript

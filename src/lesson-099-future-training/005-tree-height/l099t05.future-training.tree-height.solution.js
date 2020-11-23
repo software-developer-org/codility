@@ -10,7 +10,8 @@
  * roots of its left and right subtrees have the values 3 and 10, respectively. The right subtree of the node containing
  * the value 10, as well as the left and right subtrees of the nodes containing the values 20, 21 and 1, are empty trees.
  *
- *
+ * image located at folder l099t05-images
+ * (resource https://app.codility.com/programmers/lessons/)
  *
  * A path in a binary tree is a non-empty sequence of nodes that one can traverse by following the pointers. The length of
  * a path is the number of pointers it traverses. More formally, a path of length K is a sequence of nodes P[0], P[1], ...,

@@ -30,7 +30,8 @@
  *   A[7] = 5
  *   A[8] = 1
  *
- *
+ * image located at folder l091t03-images
+ * (resource: https://app.codility.com/programmers/lessons)
  *
  * the function should return 2. The figure above shows available pieces of fence (on the left) and possible to build pens
  * (on the right). The pens are of sizes 1x5 and 2x5. Pens of sizes 1×1 and 1×2 can be built, but are too small in area.
